@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "GSynth_32u4", "GSynth_32u4.cproj", "{D2680335-1166-4C9C-8D77-D21C58730F81}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "GSynth_teensy", "GSynth_teensy.cproj", "{02201B60-0E2A-4C22-B2FC-559EDC003F8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2680335-1166-4C9C-8D77-D21C58730F81}.Debug|AVR.ActiveCfg = Debug|AVR
+		{D2680335-1166-4C9C-8D77-D21C58730F81}.Debug|AVR.Build.0 = Debug|AVR
+		{D2680335-1166-4C9C-8D77-D21C58730F81}.Release|AVR.ActiveCfg = Release|AVR
+		{D2680335-1166-4C9C-8D77-D21C58730F81}.Release|AVR.Build.0 = Release|AVR
+		{02201B60-0E2A-4C22-B2FC-559EDC003F8C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{02201B60-0E2A-4C22-B2FC-559EDC003F8C}.Debug|AVR.Build.0 = Debug|AVR
+		{02201B60-0E2A-4C22-B2FC-559EDC003F8C}.Release|AVR.ActiveCfg = Release|AVR
+		{02201B60-0E2A-4C22-B2FC-559EDC003F8C}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
