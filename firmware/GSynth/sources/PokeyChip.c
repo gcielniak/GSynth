@@ -186,13 +186,12 @@ void ChipReset(uint8_t chip)
 	ChipWrite(chip, AUDC4, 0xA0);
 }
 
-/// To write to a POKEY chip the following procedure is required:
-/// - set write signal (switched on by default)
-/// - set address bus
-/// - set data bus
-/// - set chip
-/// - wait for address and data to be written: the worst case scenario = 16 cycles
-/// - set off all chips
+/// Writing to POKEY registers involves the following steps:
+/// - enable write (RW_Write() switch on by default);
+/// - set address and data bus (SetAddress(), SetData());
+/// - chip select (ChipSelect());
+/// - wait for address and data to be written: the worst case scenario is 2 CLK signal cycles (= 16 microcontroller cycles);
+/// - all chips off
 ///
 /// Timing: 118 cycles in O2.
 /// Manual optimization (OPTIMIZE_ME): 94 cycles. With 2 MHz clock this gives around 5.9 us.
